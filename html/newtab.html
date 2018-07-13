@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Новая вкладка Wonder Woman</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="site-wrapper">
+    <nav class="transparent animated fadeInDown" role="navigation">
+        <div class="nav-wrapper container">
+            <ul class="right nav-menu">
+                <li><a href="#"><i class="material-icons shuffle">sync</i></a></li>
+                <li data-target="slide-out" class="sidenav-trigger"><a href="#"><i class="material-icons">build</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="searchFirstPopupOverlay"></div>
+    <img id="searchFirstPopup" src="../img/search-frst.png"/>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="../img/bgheader.jpg">
+                </div>
+            </div>
+        </li>
+        <li><a><i class="material-icons">build</i>Настройки</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <div>
+                <div class="switch">
+                    <div class="switch-name">
+                        <p>Цитата </p>
+                    </div>
+                    <div class="switch-input">
+                        <label>
+                            Выкл
+                            <input class="switch-check switch-check-item" name="item" type="checkbox">
+                            <span class="lever"></span>
+                            Вкл
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="switch">
+                    <div class="switch-name">
+                        <p>Дата и время </p>
+                    </div>
+                    <div class="switch-input">
+                        <label>
+                            Выкл
+                            <input class="switch-check switch-check-dateTime" name="dateTime" type="checkbox">
+                            <span class="lever"></span>
+                            Вкл
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    <div class="container">
+        <div class="section">
+
+            <div style="height: 10vh;"></div>
+            <div class="row">
+                <div class="col s12 m6 offset-m3 center animated fadeInDown forma">
+                    <div class="row">
+                        <div class="input-field col s12 search-div">
+                            <i class="material-icons prefix">search</i>
+                            <input class="search-input" placeholder="Поиск" id="search" type="text" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br><br>
+    </div>
+
+    <footer class="page-footer transparent">
+        <div class="container">
+            <div class="row">
+
+                <div class="col l5 s12 footer-itemInfo footer-item animated fadeInUp">
+                    <div class="col l4 s4">
+                        <img class="footer-logo" src="/img/logo.png">
+                    </div>
+                    <div class="col l8 s8">
+                        <h3 class="white-text itemInfo-name"></h3>
+                    </div>
+                </div>
+
+                <div class="col l3 s12 animated fadeInUp">
+
+                </div>
+
+                <div class="col l2 s12 footer-itemWeather footer-weather animated fadeInUp">
+                    <div id="weather">
+
+                    </div>
+                </div>
+
+                <div class="col l2 s12 animated footer-itemDateTime footer-dateTime fadeInUp dateTime">
+                    <h2 class="white-text infoTime"></h2>
+                    <h3 class="white-text infoDate"></h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="../core/jquery.js"></script>
+<script src="../core/materialize.js"></script>
+<script src="../core/restorePopup.js"></script>
+<script src="../core/init.js"></script>
+
+</body>
+</html>
